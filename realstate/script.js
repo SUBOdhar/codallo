@@ -19,7 +19,7 @@ setTimeout(function () {
   document.querySelectorAll("[loader]").forEach((element) => {
     element.style.display = "none";
   });
-  content.style.display = "flex";
+  content.style.display = "block";
 }, 9000);
 
 //image loader
