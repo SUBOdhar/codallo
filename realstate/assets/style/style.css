@@ -1,0 +1,144 @@
+  /* Reset default padding and margin */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  /* Top navigation bar styling */
+  .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      margin-top: 3vw;
+      padding: 1rem 2rem;
+  }
+
+  /* Logo styling */
+  .top .logo {
+      font-size: 2vw;
+      font-weight: bold;
+      margin-left: 4vw;
+  }
+
+  .bottoms {
+      margin-top: 3vw;
+  }
+
+  .first {
+      font-size: 6vw;
+      margin: 0 10vw;
+  }
+
+  .third {
+      margin-top: 5vw;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .r-logo {
+      height: 45vw;
+      width: 50vw;
+
+  }
+
+  .txt-3 {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+
+  }
+
+  .txt-3 p {
+      font-size: 2vw;
+      max-width: 40vw;
+  }
+
+  .whatwedo {
+      text-align: center;
+      cursor: default;
+      font-size: 2vw;
+      max-width: 31vw;
+      margin-top: 3vw;
+      padding: 5vw 6vw;
+      border: 1px solid black;
+      border-radius: 1000px;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .whatwedo:hover {
+      transition: background-position 1s ease, color 1s ease;
+      background-image: linear-gradient(to top, black 50%, transparent 50%);
+      background-position: bottom;
+      background-size: 100% 200%;
+      color: white;
+  }
+
+  .forth {
+      background-color: #161616;
+      width: 100%;
+      display: flex;
+      height: fit-content;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+  }
+
+  .text-plot {
+      padding: 8vw;
+      color: white;
+      font-size: 8vw;
+  }
+
+  .plots p {
+      color: white;
+  }
+
+  .plots {
+      margin: 0 15vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3vw;
+  }
+
+  .plots div {
+      text-align: center;
+      padding: 10px;
+      font-size: 2vw;
+  }
+
+  .plots img {
+      height: 35vw;
+      width: 25vw;
+      border-radius: 50px;
+  }
+
+  .img {
+      height: 35vw;
+      position: relative;
+      width: 25vw;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      border: 1px solid white;
+      color: white;
+  }
+
+  .splash {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent overlay */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+  }

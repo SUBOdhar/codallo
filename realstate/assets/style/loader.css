@@ -4,11 +4,11 @@
     font-family: "Poppins", serif;
 }
 
-body {
+.loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -17,7 +17,6 @@ body {
 .circle {
     background-color: black;
     border-radius: 50%;
-
     position: absolute;
     z-index: 10;
 }
@@ -46,7 +45,7 @@ body {
 @keyframes moveCircle {
     0% {
         border-radius: 50%;
-        padding: 30px;
+        padding: 2vw;
         transform: translate(0px, 0px) scale(1);
         /* Start with original size */
         background-color: #c4c4c4;
@@ -56,17 +55,17 @@ body {
 
     50% {
         border-radius: 50%;
-        padding: 30px;
-        transform: translate(480px, 0) scale(1.5);
+        padding: 2vw;
+        transform: translate(30vw, 0) scale(1.5);
         /* Increase size */
         background-color: #c4c4c4;
         display: block;
     }
 
     100% {
-        transform: translate(-480px, 0) scale(1.5);
+        transform: translate(-30vw, 0) scale(1.5);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         background-color: #c4c4c4;
         display: none;
     }
@@ -74,28 +73,28 @@ body {
 
 @keyframes moveCircle2 {
     0% {
-        transform: translate(-480px, 0) scale(1.5);
+        transform: translate(-30vw, 0) scale(1.5);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         background-color: #c4c4c4;
         display: block;
     }
 
     50% {
-        transform: translate(490px, 0) scale(1);
+        transform: translate(24vw, 0) scale(1);
         display: block;
     }
 
     80% {
-        transform: translate(499px, 14px) scale(0.1);
+        transform: translate(26vw, 1vw) scale(0.1);
         background-color: #c4c4c4;
         display: block;
     }
 
     100% {
-        transform: translate(500px, 15px) scale(0.1);
+        transform: translate(26vw, 1vw) scale(0.1);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         background-color: black;
         display: none;
     }
@@ -103,22 +102,22 @@ body {
 
 @keyframes moveCircle4 {
     0% {
-        transform: translate(-480px, 0) scale(1.5);
+        transform: translate(-30vw, 0) scale(1.5);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         border-radius: 50%;
         background-color: black;
     }
 
     50% {
-        padding: 30px;
+        padding: 2vw;
         border-radius: 50%;
-        transform: translate(580px, 0) scale(1.5);
+        transform: translate(30vw, 0) scale(1.5);
 
     }
 
     100% {
-        transform: translate(580px, 0) scale(1.5);
+        transform: translate(30vw, 0) scale(1.5);
         padding: 100%;
         border-radius: 0%;
     }
@@ -126,32 +125,32 @@ body {
 
 @keyframes moveCircle3 {
     0% {
-        transform: translate(500px, 15px) scale(0.1);
+        transform: translate(26vw, 1vw) scale(0.1);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         background-color: black;
         display: block;
     }
 
     10% {
-        transform: translate(500px, 0px) scale(1);
+        transform: translate(25vw, 0px) scale(1);
         display: block;
     }
 
     100% {
-        transform: translate(-480px, 0) scale(1.5);
+        transform: translate(-30vw, 0) scale(1.5);
         /* Increase size */
-        padding: 30px;
+        padding: 2vw;
         background-color: black;
         display: none;
     }
 }
 
 .name {
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: bolder;
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     opacity: 0;
     animation: show 2s ease forwards;
     animation-delay: 2s;
@@ -160,11 +159,11 @@ body {
 
 
 .name2 {
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: bolder;
     display: none;
-    gap: 10px;
-    animation: hide 1s ease forwards ;
+    gap: 1vw;
+    animation: hide 1s ease forwards;
     animation-delay: 0.1s;
     opacity: 1;
 }
@@ -196,4 +195,26 @@ body {
 
 .p2 {
     color: #c4c4c4;
+}
+
+.white {
+    display: none;
+    position: fixed;
+    background-color: white;
+    z-index: 12;
+    animation: whitean 2s ease forwards;
+}
+
+@keyframes whitean {
+    0% {
+        height: 0%;
+        width: 0%;
+        border-radius: 20%;
+    }
+
+    100% {
+        height: 100%;
+        width: 100%;
+        border-radius: 0%;
+    }
 }

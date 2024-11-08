@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'matter-light';
+    /* give name to the custome css as you like */
+    src: url('matter-light.woff2') format('woff2'),
+        /* mention the path in the url of the font*/
+        url('matter-light.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'matter';
+    /* give name to the custome css as you like */
+    src: url('matter-regular.woff2') format('woff2'),
+        /* mention the path in the url of the font*/
+        url('matter-regular.woff2') format('woff');
+}
