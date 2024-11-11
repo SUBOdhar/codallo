@@ -20,7 +20,7 @@ setTimeout(function () {
     element.style.display = "none";
   });
   content.style.display = "block";
-}, 9000);
+}, 8500);
 
 //image loader
 const imageContainers = document.querySelectorAll(".img");
