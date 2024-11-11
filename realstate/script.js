@@ -3,9 +3,11 @@ name2 = document.getElementById("name2");
 white = document.getElementById("white");
 circle = document.getElementById("circle");
 content = document.getElementById("content");
+footer = document.getElementById("footer");
 name2.style.display = "none";
 content.style.display = "none";
 white.style.display = "none";
+footer.style.display = "none";
 setTimeout(hidename2, 3000);
 function hidename2() {
   name2.style.display = "flex";
@@ -20,6 +22,7 @@ setTimeout(function () {
     element.style.display = "none";
   });
   content.style.display = "block";
+  footer.style.display = "block";
 }, 8500);
 
 //image loader

@@ -154,6 +154,113 @@
       margin-bottom: 9vw;
   }
 
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+  }
+
+  .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-evenly;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #444;
+  }
+
+  .footer-section {
+      flex: 1;
+      min-width: 200px;
+  }
+
+  .brand-name {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin: 0 0 10px;
+  }
+
+  .footer-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+      margin: 0 0 10px;
+  }
+
+  .footer-section ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer-section ul li {
+      margin: 5px 0;
+  }
+
+  .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+  }
+
+  .footer-section ul li a:hover {
+      opacity: 1;
+  }
+
+  .contact p {
+      margin: 5px 0;
+      font-size: 0.9em;
+  }
+
+  .contact a {
+      width: fit-content;
+      color: white;
+      text-decoration: none;
+  }
+
+  .social {
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .social p {
+      font-size: 0.9em;
+  }
+
+  .social a {
+      color: #fff;
+      font-size: 1.5em;
+      margin: 0 10px;
+      transition: color 0.3s;
+  }
+
+  .facebook:hover {
+      color: #0077ff;
+  }
+
+  .instagram:hover {
+      color: rgb(246, 16, 85);
+  }
+
+  .rights {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0.7;
+  }
+
+  @media (min-width: 600px) {
+      .footer-content {
+          flex-direction: row;
+      }
+  }
+
   @media only screen and (max-width: 768px) {
       .forth {
           border-top-right-radius: 50px;
