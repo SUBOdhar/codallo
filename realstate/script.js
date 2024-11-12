@@ -4,6 +4,8 @@ white = document.getElementById("white");
 circle = document.getElementById("circle");
 content = document.getElementById("content");
 footer = document.getElementById("footer");
+chat = document.getElementById("chat");
+chat.style.display = "none";
 name2.style.display = "none";
 content.style.display = "none";
 white.style.display = "none";
@@ -23,6 +25,9 @@ setTimeout(function () {
   });
   content.style.display = "block";
   footer.style.display = "block";
+  chat.style.display = "block";
+
+
 }, 8500);
 
 //image loader
