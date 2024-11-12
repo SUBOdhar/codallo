@@ -23,7 +23,7 @@ setTimeout(function () {
   });
   content.style.display = "block";
   footer.style.display = "block";
-}, 8500);
+}, 8000);
 
 //image loader
 const imageContainers = document.querySelectorAll(".img");
