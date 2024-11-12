@@ -25,6 +25,7 @@ setTimeout(function () {
   });
   content.style.display = "block";
   footer.style.display = "block";
+  chat.style.display = " inline-flex";
 }, 8500);
 
 //image loader
