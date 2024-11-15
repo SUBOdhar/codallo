@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <script src="https://kit.fontawesome.com/35d46b7aa8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estyles.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
-<div class="form-container">
-    <h1>Contact Us</h1>
-    <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+    <div class="form-container">
+        <div class="back">
+            <i class="fa-solid fa-arrow-left" onclick="window.location.href='/realstate/'"></i>
+
+        </div>
+        <h1>
+            Contact Us
+        </h1>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
 </body>
+
 </html>
