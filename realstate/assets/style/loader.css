@@ -56,7 +56,7 @@
     50% {
         border-radius: 50%;
         padding: 2vw;
-        transform: translate(30vw, 0) scale(1.5);
+        transform: translate(40vw, 0) scale(1.5);
         /* Increase size */
         background-color: #c4c4c4;
         display: block;
@@ -81,18 +81,18 @@
     }
 
     50% {
-        transform: translate(24vw, 0) scale(1);
+        transform: translate(29vw, 0) scale(1);
         display: block;
     }
 
     80% {
-        transform: translate(26vw, 1vw) scale(0.1);
+        transform: translate(30vw, 1vw) scale(0.1);
         background-color: #c4c4c4;
         display: block;
     }
 
     100% {
-        transform: translate(26vw, 1vw) scale(0.1);
+        transform: translate(30vw, 1vw) scale(0.1);
         /* Increase size */
         padding: 2vw;
         background-color: black;
@@ -125,7 +125,7 @@
 
 @keyframes moveCircle3 {
     0% {
-        transform: translate(26vw, 1vw) scale(0.1);
+        transform: translate(30vw, 1vw) scale(0.1);
         /* Increase size */
         padding: 2vw;
         background-color: black;
@@ -133,7 +133,7 @@
     }
 
     10% {
-        transform: translate(25vw, 0px) scale(1);
+        transform: translate(29vw, 0px) scale(1);
         display: block;
     }
 
