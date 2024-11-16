@@ -45,7 +45,7 @@
 @keyframes moveCircle {
     0% {
         border-radius: 50%;
-        padding: 2vw;
+        padding: 5vw;
         transform: translate(0px, 0px) scale(1);
         /* Start with original size */
         background-color: #c4c4c4;
@@ -55,17 +55,17 @@
 
     50% {
         border-radius: 50%;
-        padding: 2vw;
-        transform: translate(40vw, 0) scale(1.5);
+        padding: 5vw;
+        transform: translate(30vw, 0) scale(1.5);
         /* Increase size */
         background-color: #c4c4c4;
         display: block;
     }
 
     100% {
-        transform: translate(-30vw, 0) scale(1.5);
+        transform: translate(-25vw, 0) scale(1.5);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         background-color: #c4c4c4;
         display: none;
     }
@@ -73,28 +73,28 @@
 
 @keyframes moveCircle2 {
     0% {
-        transform: translate(-30vw, 0) scale(1.5);
+        transform: translate(-25vw, 0) scale(1.5);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         background-color: #c4c4c4;
         display: block;
     }
 
     50% {
-        transform: translate(29vw, 0) scale(1);
+        transform: translate(23vw, 0) scale(1);
         display: block;
     }
 
     80% {
-        transform: translate(30vw, 1vw) scale(0.1);
+        transform: translate(25vw, 9vw) scale(0.1);
         background-color: #c4c4c4;
         display: block;
     }
 
     100% {
-        transform: translate(30vw, 1vw) scale(0.1);
+        transform: translate(25vw, 9vw) scale(0.1);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         background-color: black;
         display: none;
     }
@@ -102,22 +102,22 @@
 
 @keyframes moveCircle4 {
     0% {
-        transform: translate(-30vw, 0) scale(1.5);
+        transform: translate(-25vw, 0) scale(1.5);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         border-radius: 50%;
         background-color: black;
     }
 
     50% {
-        padding: 2vw;
+        padding: 5vw;
         border-radius: 50%;
-        transform: translate(30vw, 0) scale(1.5);
+        transform: translate(25vw, 0) scale(1.5);
 
     }
 
     100% {
-        transform: translate(30vw, 0) scale(1.5);
+        transform: translate(25vw, 0) scale(1.5);
         padding: 100%;
         border-radius: 0%;
     }
@@ -125,32 +125,33 @@
 
 @keyframes moveCircle3 {
     0% {
-        transform: translate(30vw, 1vw) scale(0.1);
+        transform: translate(25vw, 9vw) scale(0.1);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         background-color: black;
         display: block;
     }
 
     10% {
-        transform: translate(29vw, 0px) scale(1);
+        transform: translate(23vw, 0px) scale(1);
         display: block;
     }
 
     100% {
         transform: translate(-30vw, 0) scale(1.5);
         /* Increase size */
-        padding: 2vw;
+        padding: 5vw;
         background-color: black;
         display: none;
     }
 }
 
 .name {
-    font-size: 3vw;
     font-weight: bolder;
     display: flex;
-    gap: 1vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     animation: show 2s ease forwards;
     animation-delay: 2s;
@@ -159,10 +160,11 @@
 
 
 .name2 {
-    font-size: 3vw;
     font-weight: bolder;
     display: none;
-    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     animation: hide 1s ease forwards;
     animation-delay: 0.1s;
     opacity: 1;
@@ -191,10 +193,12 @@
 
 .p1 {
     color: black;
+    font-size: 10vw;
 }
 
 .p2 {
     color: #c4c4c4;
+    font-size: 3vw;
 }
 
 .white {
